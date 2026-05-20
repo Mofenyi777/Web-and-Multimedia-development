@@ -95,3 +95,8 @@ color: white !important;
 background-image: url(waterr.avif) !important;
 
 }
+.footer{
+    background-color: black;
+    margin-top: 20%;
+    padding-bottom:  10%;
+}
