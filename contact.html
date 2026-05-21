@@ -1,85 +1,187 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <style>
-        head{
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Aquarium.inc</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .title {
+            font-size: 50px;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
             background-color: black;
         }
-        p {
-           font-size: 50px; 
-           text-align: center;
-           color: black;
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
         }
-       
-        footer{
-            font-size: 40px;
+
+        .footer li {
+            margin-bottom: 10px;
         }
-        </style>
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ContactUs</title>
-       `<title>imageslideshow</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        
-    </head>
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
 <body>
-        <nav class="navbar ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="Aquarium logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-      Aquarium.inc
-    </a>
-  </div>
-</nav>
-<p>
-CONTACT US
 
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
 
+            <a class="navbar-brand" href="index.html">
+                <img src="aquariumlogo.png"
+                     alt="Logo"
+                     width="50"
+                     height="50"
+                     class="d-inline-block align-text-top">
 
-</p>
- <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" >
-  <label for="floatingInputDisabled">Email address</label>
-</div>
-<div class="form-floating mb-3">
-  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" ></textarea>
-  <label for="floatingTextareaDisabled">Comments</label>
-</div>
-<div class="form-floating mb-3">
-  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" ></textarea>
-  <label for="floatingTextarea2Disabled">Queries</label>
-</div>
-<div>
-</div>
-<div>
-</div>
-<div>
-</div>
- <div class="footer">
-          
-           <li class="nav-item">
-          <a class="nav-link" href="aboutUs.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact us</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link " href="photo.html">
-            Gallery
-          </a>
-           <p>copyrights @mofenyi.com
-           </p> 
+                Aquarium.inc
+            </a>
+
         </div>
+    </nav>
+
+    <!-- Title -->
+    <p class="title">CONTACT US</p>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+
+        <div class="form-floating mb-3">
+            <input type="email"
+                   class="form-control"
+                   id="floatingInput"
+                   placeholder="name@example.com">
+
+            <label for="floatingInput">Email address</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea"
+                      style="height: 120px"></textarea>
+
+            <label for="floatingTextarea">Comments</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <textarea class="form-control"
+                      placeholder="Type your queries here"
+                      id="floatingTextarea2"
+                      style="height: 120px"></textarea>
+
+            <label for="floatingTextarea2">Queries</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <ul>
+            <li>
+                <a class="nav-link" href="aboutUs.html">About Us</a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="photo.html">Gallery</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            Copyright © mofenyi.com
+        </p>
+
+    </div>
+        
+    <script>
+
+    // Get form elements
+    const emailInput = document.getElementById("floatingInput");
+    const commentsInput = document.getElementById("floatingTextarea");
+    const queriesInput = document.getElementById("floatingTextarea2");
+    const submitButton = document.querySelector("button");
+
+    // Add click event to button
+    submitButton.addEventListener("click", function () {
+
+        // Get values
+        const email = emailInput.value.trim();
+        const comments = commentsInput.value.trim();
+        const queries = queriesInput.value.trim();
+
+        // Email validation pattern
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        // Check if fields are empty
+        if (email === "" || comments === "" || queries === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        // Validate email
+        if (!email.match(emailPattern)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Success message
+        alert("Thank you! Your message has been submitted successfully.");
+
+        // Clear form
+        emailInput.value = "";
+        commentsInput.value = "";
+        queriesInput.value = "";
+
+    });
+
+</script>
+
 </body>
 </html>
+
 
 
 
