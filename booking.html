@@ -1,88 +1,242 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <style>
-           
-        </style>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bookings</title>
-       `<title>imageslideshow</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        
-    </head>
-    <a class="navbar-brand" href="index.html">
-      <img src="aquariumlogo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-      Aquarium.inc
-    </a>
-    <body>
-        <form class="row g-3">
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Phone number</label>
-    <input type="password" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">City</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">State</label>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip">
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
-  <div class="col-12">
-   
-  </div>
-</form>
-    <div class="footer">
-          
-           <li class="nav-item">
-          <a class="nav-link" href="aboutUs.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact us</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link " href="photo.html">
-            Gallery
-          </a>
-           <p>copyrights @mofenyi.com
-           </p> 
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookings - Aquarium.inc</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color: #f4f9ff;
+            font-family: Arial, sans-serif;
+        }
+
+        .booking-title{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+
+        .booking-form{
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .footer{
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #dbeeff;
+        }
+
+        .footer ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer li{
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="aquariumlogo.png"
+                     alt="Logo"
+                     width="50"
+                     height="50"
+                     class="d-inline-block align-text-top">
+
+                Aquarium.inc
+            </a>
+
         </div>
+    </nav>
 
+    <!-- Page Title -->
+    <h1 class="booking-title">
+        Aquarium Bookings
+    </h1>
 
+    <!-- Booking Form -->
+    <div class="booking-form">
 
-    </body>
+        <form class="row g-3" id="bookingForm">
+
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">
+                    Email
+                </label>
+
+                <input type="email"
+                       class="form-control"
+                       id="inputEmail4"
+                       required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputPhone" class="form-label">
+                    Phone Number
+                </label>
+
+                <input type="tel"
+                       class="form-control"
+                       id="inputPhone"
+                       required>
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">
+                    Address
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       id="inputAddress"
+                       placeholder="1234 Main St">
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">
+                    Address 2
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       id="inputAddress2"
+                       placeholder="Apartment, studio, or floor">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">
+                    City
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       id="inputCity">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">
+                    State
+                </label>
+
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Gaborone</option>
+                    <option>Francistown</option>
+                    <option>Maun</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">
+                    Zip
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       id="inputZip">
+            </div>
+
+            <div class="col-12">
+
+                <div class="form-check">
+
+                    <input class="form-check-input"
+                           type="checkbox"
+                           id="gridCheck">
+
+                    <label class="form-check-label" for="gridCheck">
+                        I confirm my booking details are correct
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-12">
+
+                <button type="submit" class="btn btn-primary">
+                    Book Now
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <ul>
+
+            <li>
+                <a class="nav-link" href="aboutUs.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="contact.html">
+                    Contact Us
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="photo.html">
+                    Gallery
+                </a>
+            </li>
+
+        </ul>
+
+        <p>
+            Copyright © mofenyi.com
+        </p>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+
+        const bookingForm = document.getElementById("bookingForm");
+
+        bookingForm.addEventListener("submit", function(event){
+
+            event.preventDefault();
+
+            alert("Thank you! Your booking has been submitted successfully.");
+
+            bookingForm.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
