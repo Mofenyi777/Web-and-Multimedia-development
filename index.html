@@ -237,6 +237,35 @@
 
         </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+<input class="form-control me-2"
+       type="search"
+       placeholder="Search"
+       id="searchBar">
 
+    <script>
+    const searchBar = document.getElementById("searchBar");
+
+    searchBar.addEventListener("keyup", function(event) {
+
+        let searchValue = event.target.value.toLowerCase();
+
+        let cards = document.querySelectorAll(".card");
+
+        cards.forEach(function(card) {
+
+            let text = card.innerText.toLowerCase();
+
+            if (text.includes(searchValue)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+</script>
+    
 </body>
 </html>
